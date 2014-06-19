@@ -1,0 +1,178 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	
+	<RelativeLayout
+	    android:id="@+id/contents"
+	    android:layout_width="450px"
+	    android:layout_height="550px"
+	    android:layout_gravity="center"
+	    tools:context=".MainActivity" >
+	
+	    <TextView
+	        android:id="@+id/stuff"
+	        android:layout_width="500px"
+	        android:layout_height="150px"
+	        android:layout_above="@+id/rightParen"
+	        android:layout_alignLeft="@+id/buttonErase"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:maxLines="10"
+	        android:minLines="1"
+	        android:scrollbars="horizontal|vertical" />
+
+	    <Button
+	        android:id="@+id/buttonEquals"
+	        style="@style/button"
+	        android:layout_alignParentBottom="true"
+	        android:layout_toLeftOf="@+id/buttonPlus"
+	        android:text="@string/ButtonEquals" />
+
+	    <Button
+	        android:id="@+id/button0"
+	        style="@style/button"
+	        android:layout_alignParentBottom="true"
+	        android:layout_toLeftOf="@+id/buttonEquals"
+	        android:text="@string/Button0" />
+
+	    <Button
+	        android:id="@+id/buttonMinus"
+	        style="@style/button"
+	        android:layout_above="@+id/buttonPlus"
+	        android:layout_toRightOf="@+id/buttonEquals"
+	        android:text="@string/ButtonMinus" />
+
+	    <Button
+	        android:id="@+id/button3"
+	        style="@style/button"
+	        android:layout_alignBaseline="@+id/buttonMinus"
+	        android:layout_toRightOf="@+id/button0"
+	        android:text="@string/Button3" />
+
+	    <Button
+	        android:id="@+id/button2"
+	        style="@style/button"
+	        android:layout_alignBaseline="@+id/button3"
+	        android:layout_alignBottom="@+id/button3"
+	        android:layout_toLeftOf="@+id/button3"
+	        android:text="@string/Button2" />
+
+	    <Button
+	        android:id="@+id/button1"
+	        style="@style/button"
+	        android:layout_alignBaseline="@+id/button2"
+	        android:layout_alignBottom="@+id/button2"
+	        android:layout_toLeftOf="@+id/button2"
+	        android:text="@string/Button1" />
+
+	    <Button
+	        android:id="@+id/buttonMult"
+	        style="@style/button"
+	        android:layout_above="@+id/buttonMinus"
+	        android:layout_alignParentRight="true"
+	        android:text="@string/ButtonMult" />
+
+	    <Button
+	        android:id="@+id/button6"
+	        style="@style/button"
+	        android:layout_alignBaseline="@+id/buttonMult"
+	        android:layout_alignBottom="@+id/buttonMult"
+	        android:layout_toLeftOf="@+id/buttonMult"
+	        android:text="@string/Button6" />
+
+	    <Button
+	        android:id="@+id/buttonDecimal"
+	        style="@style/button"
+	        android:layout_alignParentBottom="true"
+	        android:layout_toLeftOf="@+id/button0"
+	        android:text="@string/Decimal" />
+
+	    <Button
+	        android:id="@+id/button5"
+	        style="@style/button"
+	        android:layout_alignBaseline="@+id/button6"
+	        android:layout_alignBottom="@+id/button6"
+	        android:layout_toLeftOf="@+id/button6"
+	        android:text="@string/Button5" />
+
+	    <Button
+	        android:id="@+id/button4"
+	        style="@style/button"
+	        android:layout_alignBaseline="@+id/button5"
+	        android:layout_alignBottom="@+id/button5"
+	        android:layout_toLeftOf="@+id/button5"
+	        android:text="@string/Button4" />
+
+	    <Button
+	        android:id="@+id/buttonDivide"
+	        style="@style/button"
+	        android:layout_above="@+id/buttonMult"
+	        android:layout_toRightOf="@+id/button6"
+	        android:text="@string/ButtonDivide" />
+
+	    <Button
+	        android:id="@+id/button9"
+	        style="@style/button"
+	        android:layout_alignBaseline="@+id/buttonDivide"
+	        android:layout_alignBottom="@+id/buttonDivide"
+	        android:layout_toLeftOf="@+id/buttonDivide"
+	        android:text="@string/Button9" />
+
+	    <Button
+	        android:id="@+id/button8"
+	        style="@style/button"
+	        android:layout_alignBaseline="@+id/button9"
+	        android:layout_alignBottom="@+id/button9"
+	        android:layout_toLeftOf="@+id/button9"
+	        android:text="@string/Button8" />
+
+	    <Button
+	        android:id="@+id/button7"
+	        style="@style/button"
+	        android:layout_alignBaseline="@+id/button8"
+	        android:layout_alignBottom="@+id/button8"
+	        android:layout_toLeftOf="@+id/button8"
+	        android:text="@string/Button7" />
+
+	    <Button
+	        android:id="@+id/rightParen"
+	        style="@style/button"
+	        android:layout_above="@+id/buttonDivide"
+	        android:layout_alignParentRight="true"
+	        android:text="@string/rightParen" />
+
+	    <Button
+	        android:id="@+id/leftParen"
+	        style="@style/button"
+	        android:layout_alignBaseline="@+id/rightParen"
+	        android:layout_alignBottom="@+id/rightParen"
+	        android:layout_toLeftOf="@+id/rightParen"
+	        android:text="@string/leftParen" />
+
+	    <Button
+	        android:id="@+id/buttonBackspace"
+	        style="@style/button"
+	        android:layout_alignBaseline="@+id/leftParen"
+	        android:layout_alignBottom="@+id/leftParen"
+	        android:layout_toLeftOf="@+id/leftParen"
+	        android:text="@string/Backspace" />
+
+	    <Button
+	        android:id="@+id/buttonErase"
+	        style="@style/button"
+	        android:layout_alignBaseline="@+id/buttonBackspace"
+	        android:layout_alignBottom="@+id/buttonBackspace"
+	        android:layout_toLeftOf="@+id/buttonBackspace"
+	        android:text="@string/Erase" />
+
+	    <Button
+	        android:id="@+id/buttonPlus"
+	        style="@style/button"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:text="@string/ButtonPlus" />
+	
+	</RelativeLayout>
+</FrameLayout>

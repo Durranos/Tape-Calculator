@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="Button0">0</string><string name="Button1">1</string>
+    <string name="Button2">2</string>
+    <string name="Button3">3</string>
+    
+    <string name="Button4">4</string>
+    <string name="Button5">5</string>
+    <string name="Button6">6</string>
+    <string name="Button7">7</string>
+    <string name="Button8">8</string>
+    <string name="Button9">9</string>
+    <string name="ButtonPlus">+</string>
+    <string name="ButtonMinus">-</string>
+    <string name="ButtonMult">*</string>
+    <string name="ButtonDivide">/</string>
+    <string name="ButtonEquals">=</string>
+    <string name="Decimal">.</string>
+    <string name="Erase">CE</string>
+    <string name="Backspace">C</string>
+    <string name="leftParen">( </string>
+    <string name="rightParen">)</string>
+    <string name="cancel">cancel</string>
+    <string name="OK">OK</string>
+
+</resources>
